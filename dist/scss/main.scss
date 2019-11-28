@@ -1,3 +1,33 @@
-body {
-    background:beige;
-}
+// Helper files that do not output any CSS when compiled
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+// Third party code from external libraries
+@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';
+
+// Bolierplate code for project
+@import 'base/reset';
+@import 'base/typography';
+
+// Styles involved with layout of project
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+// Styles for all components of the website
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/slider';
+
+// Specific styles for certain pages.
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
